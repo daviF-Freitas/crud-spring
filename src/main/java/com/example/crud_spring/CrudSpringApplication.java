@@ -1,6 +1,7 @@
 package com.example.crud_spring;
 
 import com.example.crud_spring.Model.Course;
+import com.example.crud_spring.enums.Category;
 import com.example.crud_spring.repository.CourseRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -23,7 +24,7 @@ CrudSpringApplication {
 
 			Course c = new Course();
 			c.setName("Angular com Spring");
-			c.setCategory("Front-end");
+			c.setCategory(Category.FRONT_END);
 
 			courseRepository.save(c);
 		};
