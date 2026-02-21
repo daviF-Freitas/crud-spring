@@ -1,6 +1,5 @@
 package com.example.crud_spring.Controller;
 
-import com.example.crud_spring.Model.Course;
 import com.example.crud_spring.dto.CourseDTO;
 import com.example.crud_spring.service.CourseService;
 import jakarta.validation.Valid;
@@ -25,7 +24,7 @@ public class CourseController {
     }
 
     @GetMapping
-    public @ResponseBody List<CourseDTO> list() {
+    public List<CourseDTO> list() {
         return courseService.list();
     }
 
